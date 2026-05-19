@@ -1,0 +1,6 @@
+# Visual Studio Code settings
+.vscode/
+
+# Local history or system files
+Thumbs.db
+.DS_Store
