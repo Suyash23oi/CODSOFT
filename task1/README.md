@@ -1,2 +1,0 @@
-# CODSOFT
-virtual internship tasks
