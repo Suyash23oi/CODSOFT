@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Transformers Fitness Health Club in New Sangvi, Pune. Certified fitness trainers, daily shower, steam bath, customized training, weight training, cardio, zumba, and yoga. Transforming People, Transforming Lives.">
+  <title>Transformers Fitness Health Club | Transforming People, Transforming Lives</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- JS Script (deferred) -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Cybernetic Grid & Neon Background Glows -->
+  <div class="bg-cyber-layer">
+    <div class="cyber-grid"></div>
+    <div class="cyber-glow-halo halo-1"></div>
+    <div class="cyber-glow-halo halo-2"></div>
+  </div>
+
+  <!-- ==========================================
+     1. HEADER / NAVIGATION
+     ========================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="logo-block" id="gym-logo-nav">
+        <!-- Spartan Gladiator Custom SVG Icon -->
+        <svg class="spartan-badge-logo" viewBox="0 0 512 512">
+          <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm0 80c18.3 0 35.8 4.2 51.5 11.6L256 200.7 204.5 91.6C220.2 84.2 237.7 80 256 80zm-74.6 22.3l48.3 102.7H114.2c22.1-46.7 61.9-83 107.2-102.7zm149.2 0c45.3 19.7 85.1 56 107.2 102.7H282.3l48.3-102.7zm-252.8 139h134.4L204.5 365c-60.6-21.7-108.6-69.7-130.3-130.3zm183.1 129.1l51.5-109.1 51.5 109.1c-14.7 9.8-32.3 15.6-51.5 15.6s-36.8-5.8-51.5-15.6zm130.3-129.1c-21.7 60.6-69.7 108.6-130.3 130.3l57.7-122.9h134.4c0 3.1-.4 6.2-.8 9.3l-61 173.9c25.4-38.3 40.6-84 40.6-133.5v-27.1h30.2c26 0 47.1 21.1 47.1 47.1 0 46.1-32.4 84.6-75.6 93.3L371.4 241.3z"/>
+        </svg>
+        <div class="gym-title">
+          <span>TRANSFORMERS</span>
+          <span>Fitness Health Club</span>
+        </div>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#timings" class="nav-link">Contact & Hours</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Dynamic Gym Open/Closed Status Badge -->
+        <div class="gym-status-badge open" id="gym-status-badge">
+          <span class="status-indicator"></span>
+          <span id="gym-status-text">Checking Status...</span>
+        </div>
+        
+        <a href="#inquiry" class="btn btn-primary btn-hide-header-mobile" style="padding: 0.65rem 1.5rem; font-size: 0.85rem;">
+          <span>Inquire Now</span>
+        </a>
+        <div class="menu-toggle-btn" aria-label="Toggle Navigation Menu" role="button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================================
+     2. HERO SECTION
+     ========================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          <span>Choose Us, Choose Health</span>
+        </div>
+        <h1 class="hero-slogan">
+          Transforming <span class="gradient-text">People</span>.<br>
+          Transforming <span class="gradient-text">Lives</span>.
+        </h1>
+        <p class="hero-desc">
+          Step into Pune's high-octane fitness arena. Backed by certified strength coaches, dedicated daily shower facilities, a luxurious 3-day steam room schedule, and premium specialized training services designed to crush your fitness targets.
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="#pricing" class="btn btn-primary">
+            <span>View Membership Rates</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#inquiry" class="btn btn-secondary">
+            <span>Request Batch Timings</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Muscular Spartan Visual visual -->
+      <div class="hero-visual">
+        <div class="spartan-visual-wrapper">
+          <div class="cyber-glowing-ring"></div>
+          <!-- Spartan silhouette visualization -->
+          <svg class="spartan-badge-visual" viewBox="0 0 512 512">
+            <path d="M256 32C132.3 32 32 132.3 32 256c0 98.4 63.4 182 151.7 212.1v-86.4c-47.4-23.7-80.1-72.3-80.1-128.5 0-82.6 68.3-149.3 152.4-149.3s152.4 66.7 152.4 149.3c0 56.2-32.7 104.8-80.1 128.5v86.4C447.6 438 512 354.4 512 256 512 132.3 411.7 32 256 32zm0 88c22.1 0 40 17.9 40 40s-17.9 40-40 40-40-17.9-40-40 17.9-40 40-40zm-96 136c0-53 43-96 96-96s96 43 96 96-43 96-96 96-96-43-96-96zm96 112c-56.7 0-104.3-37-120.3-88h240.6c-16 51-63.6 88-120.3 88z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     3. FACILITIES SECTION
+     ========================================== -->
+  <section class="section" id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <span>Premium Facilities</span>
+        </div>
+        <h2 class="section-title">Engineered For Your Performance</h2>
+        <p class="section-subtitle">
+          Enjoy unmatched access to daily amenities designed to keep you consistent, hygienic, and performing at your absolute best.
+        </p>
+      </div>
+
+      <!-- Facilities Column Grid -->
+      <div class="facilities-grid">
+        <!-- Facility 1 -->
+        <div class="glass-card">
+          <div class="facility-card-icon">👥</div>
+          <h3 class="facility-card-title">Unisex Fitness Club</h3>
+          <p class="facility-card-desc">
+            A welcoming, non-intimidating, high-energy environment structured for both male and female athletes to train and grow together.
+          </p>
+        </div>
+
+        <!-- Facility 2 -->
+        <div class="glass-card">
+          <div class="facility-card-icon">🎓</div>
+          <h3 class="facility-card-title">Certified fitness trainers</h3>
+          <p class="facility-card-desc">
+            Work face-to-face with professional, certified strength and conditioning coaches dedicated to correcting form and maximizing workout metrics.
+          </p>
+        </div>
+
+        <!-- Facility 3 -->
+        <div class="glass-card">
+          <div class="facility-card-icon">💨</div>
+          <h3 class="facility-card-title">Steam Room & Showers</h3>
+          <p class="facility-card-desc">
+            Relax in our steam room (active 3 days/week) to accelerate muscle recovery, and refresh instantly with pristine daily-cleaned shower rooms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     4. SERVICES OVERVIEW GRID
+     ========================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <span>Our Services</span>
+        </div>
+        <h2 class="section-title">Choose Your Path to Transformation</h2>
+        <p class="section-subtitle">
+          Diversified training styles led by certified coaches. Expand your routine with high-velocity circuits, rhythmic zumba, or quiet power yoga.
+        </p>
+      </div>
+
+      <div class="services-container-grid">
+        <!-- Service 1 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Hypertrophy</span>
+          <h3 class="service-card-title">Weight Training</h3>
+          <p class="facility-card-desc">Target progressive resistance loads. Perfect for building lean tissue density, structural bone health, and absolute raw strength.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span style="color: var(--theme-accent)">Extremely High</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Endurance</span>
+          <h3 class="service-card-title">Cardio Burn</h3>
+          <p class="facility-card-desc">Shatter stamina ceilings with state-of-the-art treadmills, ellipticals, and spin nodes programmed to optimize heart-rate metrics.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span>High</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Athletic</span>
+          <h3 class="service-card-title">Functional Training</h3>
+          <p class="facility-card-desc">Dynamic full-body routines that sync multi-joint mobility with explosive power, preparing you for daily kinetic movement.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span>Very High</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Aerobic</span>
+          <h3 class="service-card-title">Zumba Fitness</h3>
+          <p class="facility-card-desc">High-tempo cardio dance routines packed with fat-burning potential and vibrant rhythms. Sweat out tension in group batches.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span>Moderate</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Mental & Mobility</span>
+          <h3 class="service-card-title">Power Yoga</h3>
+          <p class="facility-card-desc">Recover and align. Mobilize tight joint capsules, stretch deep myofascial meridians, and restore mental focus with structured breathing.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span>Low-Moderate</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 45%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Metabolic</span>
+          <h3 class="service-card-title">Circuit Training</h3>
+          <p class="facility-card-desc">A relentless loop of high-density stations targeting resistance loads back-to-back with minimal rest. Excellent fat burner.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span style="color: var(--theme-accent)">Extremely High</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Core density</span>
+          <h3 class="service-card-title">Abs Batch</h3>
+          <p class="facility-card-desc">Focused group batches targeting rectus abdominis, obliques, and deep transverse stabilizers for structural core stability.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span>High</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="glass-card">
+          <span class="service-card-tag">Elite Synergy</span>
+          <h3 class="service-card-title">Personal Training</h3>
+          <p class="facility-card-desc">Accelerate growth with dedicated, private coaching. Personalized workout sheets, posture assessments, and weekly progress logs.</p>
+          <div class="service-intensity-bar">
+            <div class="intensity-label-row">
+              <span>Intensity</span>
+              <span style="color: var(--theme-accent)">Custom/Extreme</span>
+            </div>
+            <div class="intensity-meter-rail">
+              <div class="intensity-meter-fill" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     5. PRICING MATRIX & SAVINGS SLIDER
+     ========================================== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <span>Membership Options</span>
+        </div>
+        <h2 class="section-title">Limited Time Special Promotion Rates</h2>
+        <p class="section-subtitle">
+          Unlock maximum savings! Compare our base pricing with exclusive offer rates and enjoy **FREE BONUS MONTHS** on long-term plans.
+        </p>
+      </div>
+
+      <!-- Pricing Matrix Grid (4 Columns) -->
+      <div class="pricing-matrix-board">
+        <!-- Plan 1: 1 Month -->
+        <div class="glass-card pricing-membership-card">
+          <div>
+            <div class="membership-duration-header">
+              <span class="duration-tag-title">1 Month</span>
+              <div class="base-pricing-row">
+                <span class="strikethrough-base-price">₹2,500</span>
+                <span class="savings-highlight-badge">Save ₹500</span>
+              </div>
+              <div class="offer-pricing-row">
+                <span class="rupee-symbol">₹</span>
+                <span class="offer-rate-val">2,000</span>
+              </div>
+              <div class="monthly-breakdown-rate">₹2,000 / month</div>
+            </div>
+
+            <div class="promo-benefit-highlight-box" style="background: rgba(255,255,255,0.02); border-color: var(--glass-border);">
+              <span class="promo-benefit-text-label" style="color: var(--color-text-gray);">Standard Pass</span>
+            </div>
+          </div>
+
+          <ul class="membership-perks-list">
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Access to Unisex Gym</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Daily Shower Facility</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cardio & Weights Access</span>
+            </li>
+            <li class="membership-perk-item disabled">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              <span>No Steam Bath Access</span>
+            </li>
+          </ul>
+
+          <a href="#inquiry" class="btn btn-secondary" style="width: 100%;">Buy Standard</a>
+        </div>
+
+        <!-- Plan 2: 3 Months (+1 Free = 4 Months) -->
+        <div class="glass-card pricing-membership-card">
+          <div class="promo-badge-tag">Promo</div>
+          <div>
+            <div class="membership-duration-header">
+              <span class="duration-tag-title">3 Months</span>
+              <div class="base-pricing-row">
+                <span class="strikethrough-base-price">₹5,500</span>
+                <span class="savings-highlight-badge">Save ₹1,000</span>
+              </div>
+              <div class="offer-pricing-row">
+                <span class="rupee-symbol">₹</span>
+                <span class="offer-rate-val">4,500</span>
+              </div>
+              <div class="monthly-breakdown-rate">₹1,125 / month (Billed Total)</div>
+            </div>
+
+            <div class="promo-benefit-highlight-box">
+              <span class="promo-benefit-text-label">Get 4 Months Total!</span>
+            </div>
+          </div>
+
+          <ul class="membership-perks-list">
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>+1 Month FREE Added</strong></span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Daily Clean Shower Use</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Steam Room (3 days/wk)</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Full Gym Floor Access</span>
+            </li>
+          </ul>
+
+          <a href="#inquiry" class="btn btn-secondary" style="width: 100%;">Buy 3 Months</a>
+        </div>
+
+        <!-- Plan 3: 6 Months (+1 Free = 7 Months) -->
+        <div class="glass-card pricing-membership-card">
+          <div class="promo-badge-tag">Promo</div>
+          <div>
+            <div class="membership-duration-header">
+              <span class="duration-tag-title">6 Months</span>
+              <div class="base-pricing-row">
+                <span class="strikethrough-base-price">₹7,500</span>
+                <span class="savings-highlight-badge">Save ₹1,500</span>
+              </div>
+              <div class="offer-pricing-row">
+                <span class="rupee-symbol">₹</span>
+                <span class="offer-rate-val">6,000</span>
+              </div>
+              <div class="monthly-breakdown-rate">₹857 / month (Billed Total)</div>
+            </div>
+
+            <div class="promo-benefit-highlight-box">
+              <span class="promo-benefit-text-label">Get 7 Months Total!</span>
+            </div>
+          </div>
+
+          <ul class="membership-perks-list">
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>+1 Month FREE Added</strong></span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Full Cardio & Weights access</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Steam Room + Daily Shower</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Certified Trainer Guidance</span>
+            </li>
+          </ul>
+
+          <a href="#inquiry" class="btn btn-secondary" style="width: 100%;">Buy 6 Months</a>
+        </div>
+
+        <!-- Plan 4: 12 Months (+1 Free = 13 Months - Featured) -->
+        <div class="glass-card pricing-membership-card promo-featured">
+          <div class="promo-badge-tag" style="background: #ffffff; color: #04060a;">Best Deal</div>
+          <div>
+            <div class="membership-duration-header" style="border-color: rgba(0, 255, 102, 0.25);">
+              <span class="duration-tag-title" style="color: var(--theme-accent)">12 Months</span>
+              <div class="base-pricing-row">
+                <span class="strikethrough-base-price">₹9,500</span>
+                <span class="savings-highlight-badge" style="color: var(--theme-accent)">Save ₹2,000</span>
+              </div>
+              <div class="offer-pricing-row">
+                <span class="rupee-symbol" style="color: var(--theme-accent)">₹</span>
+                <span class="offer-rate-val" style="color: var(--theme-accent)">7,500</span>
+              </div>
+              <div class="monthly-breakdown-rate" style="color: var(--theme-accent)">₹576 / month (Best Value!)</div>
+            </div>
+
+            <div class="promo-benefit-highlight-box" style="background: rgba(0, 255, 102, 0.08); border-color: var(--theme-accent);">
+              <span class="promo-benefit-text-label">Get 13 Months Total!</span>
+            </div>
+          </div>
+
+          <ul class="membership-perks-list">
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>+1 Month FREE Added</strong></span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Circuits, Zumba, and Abs Batch</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Steam Room (3 days/wk) + Shower</span>
+            </li>
+            <li class="membership-perk-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Certified Coaching Assessments</span>
+            </li>
+          </ul>
+
+          <a href="#inquiry" class="btn btn-primary" style="width: 100%;">Claim Best Deal</a>
+        </div>
+      </div>
+
+      <!-- Pricing Calculator Interactive Widget -->
+      <div class="glass-card pricing-calculator-card" style="border-color: rgba(255,255,255,0.08);">
+        <div class="calculator-layout">
+          <!-- Control Side -->
+          <div class="calculator-slider-side">
+            <span class="badge">Value Calculator</span>
+            <h3 class="section-title" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Estimate Membership Value</h3>
+            <p style="color: var(--color-text-gray); font-size: 0.95rem;">Drag the selector nodes to evaluate total monetary discounts and free added training months.</p>
+            
+            <div class="calc-slider-wrapper">
+              <input type="range" min="0" max="3" value="3" class="calc-slider-input" id="calc-slider" aria-label="Membership Duration Slider">
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; color: var(--color-text-dim); text-transform: uppercase;">
+              <span>1 Month</span>
+              <span>3 Months</span>
+              <span>6 Months</span>
+              <span>12 Months</span>
+            </div>
+          </div>
+
+          <!-- Metrics Display Side -->
+          <div class="calculator-metrics-side">
+            <h4 class="calc-metric-val" id="calc-duration" style="font-size: 1.35rem; margin-bottom: 1.25rem; color: var(--theme-accent);">13 Months Membership</h4>
+            
+            <div class="calc-metric-row">
+              <span class="calc-metric-label">Base Rate</span>
+              <span class="calc-metric-val" id="calc-base-price" style="text-decoration: line-through; color: var(--color-text-dim);">₹9,500</span>
+            </div>
+
+            <div class="calc-metric-row">
+              <span class="calc-metric-label">Special Offer Rate</span>
+              <span class="calc-metric-val" id="calc-offer-price" style="color: var(--color-text-bright); font-size: 1.5rem;">₹7,500</span>
+            </div>
+
+            <div class="calc-metric-row">
+              <span class="calc-metric-label">Bonus Benefit Added</span>
+              <span class="calc-metric-val" id="calc-bonus" style="color: var(--theme-accent); font-weight: 700;">1 Month FREE Added!</span>
+            </div>
+
+            <div class="calc-metric-row">
+              <span class="calc-metric-label" style="font-weight: 800; color: var(--color-text-bright);">Net Cash Saved</span>
+              <span class="calc-metric-val total-savings" id="calc-savings">₹2,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     6. HOURS, LOCATION, & DIRECT CALL LINKS
+     ========================================== -->
+  <section class="section" id="timings">
+    <div class="container contact-details-grid">
+      <!-- Timing Schedule -->
+      <div>
+        <div class="badge">
+          <span>Gym Operating Hours</span>
+        </div>
+        <h2 class="section-title" style="margin-bottom: 1.5rem;">Time to Make Your Move</h2>
+        <p style="color: var(--color-text-gray); font-size: 1.05rem; margin-bottom: 2rem;">
+          Whether you are an early riser crushing workouts before sunrise, or a late-night trainer training post-shift, our hours are tailored to keep you dedicated.
+        </p>
+
+        <!-- Timings Table list -->
+        <div class="timing-schedule-rows-wrapper">
+          <div class="schedule-row-node">
+            <span class="schedule-day-label">Monday - Saturday</span>
+            <span class="schedule-time-label">6:00 AM - 10:00 PM</span>
+          </div>
+          <div class="schedule-row-node">
+            <span class="schedule-day-label">Sunday</span>
+            <span class="schedule-time-label">7:00 AM - 11:00 AM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address & Direct Phone Links -->
+      <div class="glass-card gym-location-contacts-card">
+        <!-- Block 1: Address -->
+        <div class="info-item-block-node">
+          <div class="info-node-icon">📍</div>
+          <div>
+            <div class="info-node-content-title">Location Address</div>
+            <p class="info-node-text-body">
+              1st Floor, Narsing Niwas, Adarsh Nagar, above Benglore Bakery, Opposite Union Bank, Famous chowk, New Sangvi, Pune 411027
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 2: Contacts -->
+        <div class="info-item-block-node">
+          <div class="info-node-icon">📞</div>
+          <div>
+            <div class="info-node-content-title">Contact / Inquiry Phone</div>
+            <p class="info-node-text-body" style="font-weight: 700;">
+              Click below to place a direct phone inquiry with our trainers:
+            </p>
+            <div class="interactive-call-triggers-grid">
+              <a href="tel:+917499541253" class="call-pill-node-btn" aria-label="Call +91 7499541253">
+                <span>Call 74995 41253</span>
+              </a>
+              <a href="tel:+918698989804" class="call-pill-node-btn" aria-label="Call +91 8698989804">
+                <span>Call 86989 89804</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     7. MEMBERSHIP INQUIRY FORM
+     ========================================== -->
+  <section class="section" id="inquiry">
+    <div class="container">
+      <div class="glass-card lead-cta-wrapper" style="border-color: rgba(0, 255, 102, 0.2);">
+        <div class="lead-cta-glow-bg"></div>
+        <div class="lead-cta-container">
+          <span class="badge" style="background: rgba(0,255,102,0.12);">Join Transformers Gym</span>
+          <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 3rem);">Start Your Transformation Journey</h2>
+          <p style="color: var(--color-text-gray); font-size: 1.05rem;">
+            Ready to change your lifestyle? Submit your name and contact details below. Our trainers will instantly reach out to coordinate batch timings, personal training programs, and special membership slots.
+          </p>
+
+          <!-- Input form -->
+          <form class="guest-pass-form-grid" id="gym-inquiry-form" aria-label="Gym inquiry sign up">
+            <input type="text" placeholder="Your Name" required class="form-input-node" id="inquiry-name" aria-label="Enter Your Name">
+            <input type="tel" placeholder="Your Phone Number" required class="form-input-node" id="inquiry-phone" aria-label="Enter Your Phone Number">
+            <button type="submit" class="btn btn-primary form-submit-full-width-btn newsletter-submit">
+              <span>Submit General Club Inquiry</span>
+            </button>
+          </form>
+          <div class="pass-success-feedback" id="inquiry-success-feedback" role="alert"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     8. FOOTER
+     ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-layout-flex">
+        <div class="footer-left-info">
+          <a href="#home" class="logo-block">
+            <svg class="spartan-badge-logo" viewBox="0 0 512 512" style="width: 32px; height: 32px;">
+              <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm0 80c18.3 0 35.8 4.2 51.5 11.6L256 200.7 204.5 91.6C220.2 84.2 237.7 80 256 80zm-74.6 22.3l48.3 102.7H114.2c22.1-46.7 61.9-83 107.2-102.7zm149.2 0c45.3 19.7 85.1 56 107.2 102.7H282.3l48.3-102.7zm-252.8 139h134.4L204.5 365c-60.6-21.7-108.6-69.7-130.3-130.3zm183.1 129.1l51.5-109.1 51.5 109.1c-14.7 9.8-32.3 15.6-51.5 15.6s-36.8-5.8-51.5-15.6zm130.3-129.1c-21.7 60.6-69.7 108.6-130.3 130.3l57.7-122.9h134.4c0 3.1-.4 6.2-.8 9.3l-61 173.9c25.4-38.3 40.6-84 40.6-133.5v-27.1h30.2c26 0 47.1 21.1 47.1 47.1 0 46.1-32.4 84.6-75.6 93.3L371.4 241.3z"/>
+            </svg>
+            <div class="gym-title" style="font-size: 1.1rem;">
+              <span>TRANSFORMERS</span>
+              <span>Fitness Health Club</span>
+            </div>
+          </a>
+          <p>
+            Transforming People, Transforming Lives. Join Pune's elite strength club today.
+          </p>
+        </div>
+
+        <!-- Social Channels -->
+        <div class="footer-socials">
+          <a href="https://facebook.com" class="footer-social-node-btn" aria-label="Join Transformers Facebook Community" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+          </a>
+          <a href="https://instagram.com" class="footer-social-node-btn" aria-label="Join Transformers Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Legal bottom -->
+      <div class="footer-bottom-legal">
+        <span>&copy; 2026 Transformers Fitness Health Club. All rights reserved. Created for Elite strength & fitness.</span>
+        <div>
+          <a href="#home" style="margin-right: 1.5rem; color: var(--color-text-dim);">Privacy Strategy</a>
+          <a href="#home" style="color: var(--color-text-dim);">Terms of Workout</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
