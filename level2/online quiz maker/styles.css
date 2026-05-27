@@ -1,0 +1,290 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0c1120;
+  color: #eef0f6;
+  accent-color: #7c5cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1222 0%, #141c33 100%);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.app-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.app-header p {
+  margin: 0;
+  color: #b2b7ce;
+  max-width: 720px;
+}
+
+.auth-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
+
+.card {
+  background: rgba(22, 33, 64, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(5, 8, 21, 0.35);
+  padding: 24px;
+}
+
+.home-card,
+.auth-card {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(14, 23, 45, 0.9);
+  color: #eef0f6;
+  padding: 14px 16px;
+  margin-top: 8px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.primary-btn,
+.secondary-btn,
+.link-btn {
+  padding: 12px 18px;
+  border-radius: 14px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #7c5cff 0%, #4e7bff 100%);
+  color: white;
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #eef0f6;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.link-btn:hover {
+  transform: translateY(-1px);
+}
+
+.link-btn {
+  background: none;
+  color: #7c5cff;
+  padding: 0;
+}
+
+.small-text {
+  color: #9aa3c7;
+}
+
+.quiz-list {
+  display: grid;
+  gap: 16px;
+}
+
+.quiz-item,
+.question-card,
+.review-item {
+  background: rgba(9, 16, 33, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.quiz-item h3,
+.question-card h3,
+.review-item h3 {
+  margin: 0 0 8px;
+}
+
+.quiz-item p,
+.question-card p,
+.review-item p {
+  margin: 0 0 12px;
+  color: #c3c9e2;
+}
+
+.quiz-item .button-row,
+.question-card .button-row,
+.review-item .button-row {
+  justify-content: flex-start;
+}
+
+.empty-state {
+  color: #9aa3c7;
+  margin-top: 18px;
+}
+
+.question-list {
+  display: grid;
+  gap: 18px;
+}
+
+.question-card label {
+  margin-bottom: 12px;
+}
+
+.question-card input[type="text"] {
+  width: 100%;
+}
+
+.option-fields {
+  display: grid;
+  gap: 10px;
+}
+
+.option-field {
+  display: flex;
+  gap: 10px;
+}
+
+.option-field input {
+  flex: 1;
+}
+
+.remove-question {
+  margin-top: 12px;
+  background: rgba(255, 80, 100, 0.14);
+  color: #ff8ea2;
+}
+
+.question-container {
+  min-height: 240px;
+}
+
+.question-card .question-text {
+  margin: 0 0 12px;
+}
+
+.answer-review {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.review-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review-item li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.badge.correct {
+  background: rgba(97, 217, 167, 0.18);
+  color: #8be9c9;
+}
+
+.badge.wrong {
+  background: rgba(255, 115, 115, 0.16);
+  color: #ff8ea2;
+}
+
+.result-summary {
+  background: rgba(15, 24, 44, 0.95);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 720px) {
+  .app-shell {
+    padding: 16px;
+  }
+
+  .view-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 560px) {
+  .button-row {
+    flex-direction: column;
+  }
+
+  .app-header {
+    align-items: flex-start;
+  }
+}

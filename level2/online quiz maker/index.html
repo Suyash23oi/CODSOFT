@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Quiz Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <h1>Online Quiz Maker</h1>
+        <p>Create quizzes, take quizzes, and track results instantly.</p>
+      </div>
+      <div id="auth-status" class="auth-status"></div>
+    </header>
+
+    <main class="app-main">
+      <section id="home-view" class="view active">
+        <div class="card home-card">
+          <h2>Welcome!</h2>
+          <p>Build your own multiple-choice quizzes, share them, and let others take them.</p>
+          <div class="button-row">
+            <button id="btn-login" class="primary-btn">Login</button>
+            <button id="btn-register" class="secondary-btn">Register</button>
+          </div>
+          <div class="button-row">
+            <button id="btn-list-quizzes" class="primary-btn">Browse Quizzes</button>
+            <button id="btn-create-quiz" class="secondary-btn">Create Quiz</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="auth-view" class="view">
+        <div class="card auth-card">
+          <h2 id="auth-title">Login</h2>
+          <form id="auth-form">
+            <label>
+              Username
+              <input type="text" id="auth-username" required />
+            </label>
+            <label>
+              Password
+              <input type="password" id="auth-password" required />
+            </label>
+            <div class="button-row">
+              <button type="submit" class="primary-btn">Submit</button>
+              <button type="button" id="btn-auth-cancel" class="secondary-btn">Cancel</button>
+            </div>
+          </form>
+          <p class="small-text" id="auth-switch-text">Don't have an account? <button id="switch-to-register" class="link-btn">Register</button></p>
+        </div>
+      </section>
+
+      <section id="quiz-list-view" class="view">
+        <div class="card">
+          <div class="view-header">
+            <h2>Available Quizzes</h2>
+            <button id="btn-back-to-home" class="secondary-btn">Back</button>
+          </div>
+          <div id="quiz-list" class="quiz-list"></div>
+          <div id="empty-list" class="empty-state">No quizzes yet. Create one to get started.</div>
+        </div>
+      </section>
+
+      <section id="quiz-create-view" class="view">
+        <div class="card">
+          <div class="view-header">
+            <h2>Create New Quiz</h2>
+            <button id="btn-cancel-create" class="secondary-btn">Cancel</button>
+          </div>
+          <form id="quiz-form" class="quiz-form">
+            <label>
+              Quiz Title
+              <input type="text" id="quiz-title" required />
+            </label>
+            <label>
+              Description
+              <textarea id="quiz-description" rows="2" placeholder="Optional"></textarea>
+            </label>
+            <div id="question-list" class="question-list"></div>
+            <div class="button-row wrap">
+              <button type="button" id="btn-add-question" class="secondary-btn">Add Question</button>
+              <button type="submit" class="primary-btn">Save Quiz</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="quiz-take-view" class="view">
+        <div class="card">
+          <div class="view-header">
+            <div>
+              <h2 id="take-title"></h2>
+              <p id="take-meta" class="small-text"></p>
+            </div>
+            <button id="btn-cancel-quiz" class="secondary-btn">Exit</button>
+          </div>
+          <div id="question-container" class="question-container"></div>
+          <div class="button-row wrap">
+            <button id="btn-prev-question" class="secondary-btn">Previous</button>
+            <button id="btn-next-question" class="primary-btn">Next</button>
+            <button id="btn-submit-quiz" class="primary-btn">Submit Quiz</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz-result-view" class="view">
+        <div class="card">
+          <div class="view-header">
+            <h2>Results</h2>
+            <button id="btn-result-home" class="secondary-btn">Home</button>
+          </div>
+          <div id="result-summary" class="result-summary"></div>
+          <div id="answer-review" class="answer-review"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
